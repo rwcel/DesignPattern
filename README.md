@@ -6,4 +6,4 @@
 ## 목차
 
 
-- [1주차] `전략 패턴`: Read/Strategy.md
+- [1주차] `전략 패턴`: (Read/Strategy.md)
