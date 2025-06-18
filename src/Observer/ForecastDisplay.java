@@ -4,17 +4,17 @@ public class ForecastDisplay implements Observer, DisplayElement {
     private float currentPressure = 29.92f;     // 디폴트 기압
     private float lastPressure;         // 이전 기압
 
-    private Subject weatherData;
+    private WeatherData weatherData;
 
-    public ForecastDisplay(Subject weatherData) {
+    public ForecastDisplay(WeatherData weatherData) {
         this.weatherData = weatherData;
         weatherData.registerObserver(this);
     }
 
     @Override
-    public void update(float temperature, float humidity, float pressure) {
+    public void update() {
         lastPressure = currentPressure;
-        currentPressure = pressure;
+        currentPressure = weatherData.getTemperature();
         display();
     }
 

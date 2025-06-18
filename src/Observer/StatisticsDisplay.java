@@ -5,15 +5,16 @@ public class StatisticsDisplay implements Observer, DisplayElement {
     private float minTemp = 200.0f;        // 최저 온도
     private float tempSum = 0.0f;       // 온도 합계
     private int numReadings;            // 측정된 온도 개수
-    private Subject weatherData;
+    private WeatherData weatherData;
 
-    public StatisticsDisplay(Subject weatherData) {
+    public StatisticsDisplay(WeatherData weatherData) {
         this.weatherData = weatherData;
         weatherData.registerObserver(this);
     }
 
     @Override
-    public void update(float temperature, float humidity, float pressure) {
+    public void update() {
+        var temperature = weatherData.getTemperature(); // WeatherData에서 온도 가져오기
         tempSum += temperature;
         numReadings++;
 
