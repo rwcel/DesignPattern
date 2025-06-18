@@ -7,3 +7,4 @@
 
 
 - 1주차 : [`전략 패턴`](Read/Strategy.md)
+- 2주차 : [`옵저버 패턴`](Read/Observer.md)
