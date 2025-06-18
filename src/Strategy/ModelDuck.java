@@ -1,4 +1,4 @@
-package Stretagy;
+package Strategy;
 
 public class ModelDuck extends Duck {
 
