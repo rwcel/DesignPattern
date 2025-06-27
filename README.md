@@ -8,3 +8,4 @@
 
 - 1주차 : [`전략 패턴`](Read/Strategy.md)
 - 2주차 : [`옵저버 패턴`](Read/Observer.md)
+- 3주차 : [`데코레이터 패턴`](Read/Decorator.md)
